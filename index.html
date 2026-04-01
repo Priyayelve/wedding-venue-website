@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Everlasting Moments Wedding Venue</title>
+
+<style>
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+/* Header */
+header {
+    background: #f8d7da;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Hero text */
+.hero h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 36px;
+}
+
+/* Button */
+.btn {
+    position: relative;
+    z-index: 1;
+    background: #c9a66b;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #a88b50;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    margin: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: #c9a66b;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #f8d7da;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Everlasting Moments Wedding Venue</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Packages</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Your Dream Wedding Starts Here</h2>
+    <a href="#" class="btn">Book Now</a>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Wedding ceremony">
+            <h3>Outdoor Ceremony</h3>
+            <p>Beautiful garden weddings.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507502707541-f369a3b18502" alt="Wedding venue">
+            <h3>Luxury Hall</h3>
+            <p>Elegant indoor celebrations.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e" alt="Catering">
+            <h3>Catering</h3>
+            <p>Delicious customized menus.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Everlasting Moments Wedding Venue</p>
+</footer>
+
+</body>
+</html>
